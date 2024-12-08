@@ -71,7 +71,7 @@ local library = {
 local function applyImprovements(gui)
     for _, child in ipairs(gui:GetDescendants()) do
         if child:IsA("TextLabel") or child:IsA("TextButton") or child:IsA("TextBox") then
-            child.Font = Enum.Font.Gotham -- Use a clean font
+            child.Font = Enum.Font.Code -- Use a clean font
             child.TextSize = 14 -- Standard size
             child.TextScaled = false -- Prevent distortion
             child.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text for readability
